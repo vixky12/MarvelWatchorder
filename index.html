@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b16"><title>Multiverse Archive — MCU Watch Order</title>
+<style>
+:root{--bg:#080b16;--panel:#11182a;--panel2:#17223a;--gold:#d6b36a;--green:#7ee0bd;--muted:#9ba8bd;--line:#293653}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#23375d 0,#0b1020 45%,var(--bg) 75%);color:#edf2fb;font:15px/1.5 Inter,system-ui,Segoe UI,sans-serif}
+header{padding:28px clamp(18px,5vw,72px) 18px;border-bottom:1px solid #ffffff16;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #d6b36a22;border-radius:50%;right:-120px;top:-220px;box-shadow:0 0 0 35px #d6b36a08,0 0 0 75px #d6b36a06}
+.kicker{color:var(--gold);letter-spacing:.28em;text-transform:uppercase;font-size:11px;font-weight:800}.brand{font-size:clamp(32px,6vw,64px);line-height:1.02;letter-spacing:-.05em;margin:12px 0}.brand span{color:var(--gold)}.sub{max-width:720px;color:#b6c1d4}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid #ffffff22;border-radius:30px;padding:6px 11px;color:#c9d2e2;font-size:12px}
+main{max-width:1400px;margin:auto;padding:24px clamp(14px,4vw,56px) 70px}
+.hero{display:grid;grid-template-columns:1.4fr .6fr;gap:16px;margin:12px 0 24px}.panel{background:linear-gradient(145deg,#17233b,#0e1526);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 12px 40px #0003}.panel h2{margin:0 0 6px;font-size:19px}.panel p{margin:0;color:var(--muted)}.stat{font-size:32px;color:var(--gold);font-weight:800}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:18px 0}.toolbar input{flex:1;min-width:180px}.toolbar input,.toolbar select{background:#10192b;color:#eef;border:1px solid var(--line);border-radius:10px;padding:12px}
+button{background:#17233b;border:1px solid var(--line);color:#dce6f6;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:700}button.active,button:hover{border-color:var(--gold);color:var(--gold)}.progress{height:7px;background:#26324a;border-radius:9px;overflow:hidden;margin-top:12px}.progress i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--gold));width:0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:28px 0 12px}.section-head h2{margin:0;font-size:23px}.muted{color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:14px}.movie{background:linear-gradient(160deg,#18243b,#0e1423);border:1px solid var(--line);border-radius:15px;overflow:hidden;transition:.2s;min-width:0}.movie:hover{transform:translateY(-3px);border-color:#8f784d}.poster{height:270px;background:radial-gradient(circle at 50% 30%,#4b4165,#121b31 65%);position:relative;display:flex;align-items:end;padding:16px;overflow:hidden}.poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82}.poster:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#080b16)}.poster b{z-index:1;font-size:21px;line-height:1.05;text-shadow:0 2px 12px #000}.phase{position:absolute;z-index:2;top:10px;left:10px;background:#080b16cc;border:1px solid #d6b36a88;color:var(--gold);border-radius:20px;padding:4px 8px;font-size:10px;letter-spacing:.1em}.body{padding:13px}.titleline{display:flex;justify-content:space-between;gap:8px;align-items:start}.titleline h3{font-size:15px;margin:0}.year{color:var(--gold);font-size:12px;white-space:nowrap}.desc{color:#aab7ca;font-size:12px;min-height:48px;margin:9px 0}.links{display:flex;gap:12px;flex-wrap:wrap;font-size:12px}.links a{color:var(--green);text-decoration:none}.links a:hover{text-decoration:underline}.check{display:flex;align-items:center;gap:7px;color:#c4d0e2;font-size:12px;margin-top:12px}.check input{accent-color:#69d7b4;width:16px;height:16px}.watched{opacity:.56}.watched .poster:before{content:"WATCHED";position:absolute;z-index:3;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-12deg);border:2px solid var(--green);color:var(--green);padding:6px 14px;font-weight:900;letter-spacing:.2em;background:#06120fbb}
+.timeline{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}.node{border:1px solid #d6b36a55;border-radius:10px;padding:8px 11px;background:#131e33;color:#dce5f5;font-size:12px}.node:before{content:"✦ ";color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:#8290a7;font-size:12px}a{color:var(--green)}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.poster{height:240px}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.body{padding:10px}.desc{min-height:66px}.poster{padding:10px}.poster b{font-size:18px}.section-head{align-items:start;flex-direction:column}}
+</style></head>
+<body>
+<header><div class="kicker">Sacred Timeline // TVA Archives</div><h1 class="brand">MULTIVERSE <span>ARCHIVE</span></h1><p class="sub">A branching guide through the Marvel Cinematic Universe. Follow the Sacred Timeline, explore alternate branches, and track every film on your journey toward the next Avengers event.</p><div class="meta"><span class="pill">38 released MCU-connected films in this guide</span><span class="pill">Release + story timeline</span><span class="pill">Progress saved on this device</span></div></header>
+<main>
+<div class="hero">
+ <div class="panel"><div class="kicker">Your mission briefing</div><h2>Every story leaves a branch.</h2><p>For a first watch, choose <b>Release Order</b> to preserve reveals as audiences experienced them. Switch to <b>Timeline Order</b> for an in-universe rewatch. Series and specials are listed in the branch guide below.</p><div class="progress"><i id="bar"></i></div><p id="progressText" style="margin-top:8px;font-size:12px">0 / 38 films completed</p></div>
+ <div class="panel"><div class="kicker">Next major convergence</div><div class="stat">18 DEC 2026</div><h2>Avengers: Doomsday</h2><p>Scheduled US theatrical date. Disney/Marvel lists December 18; check local listings for India-specific timing.</p></div>
+</div>
+<div class="section-head"><div><div class="kicker">Choose your path</div><h2 id="listTitle">Theatrical Release Order</h2><div class="muted" id="listSub">The recommended path for a first-time journey.</div></div></div>
+<div class="toolbar">
+ <button class="active" id="releaseBtn">Release order</button><button id="chronoBtn">Timeline order</button>
+ <input id="search" placeholder="Search a title, hero, or year…" aria-label="Search movies">
+ <select id="phase"><option value="">All phases</option><option>Phase One</option><option>Phase Two</option><option>Phase Three</option><option>Phase Four</option><option>Phase Five</option><option>Phase Six</option></select>
+ <select id="status"><option value="">All films</option><option value="todo">Not watched</option><option value="done">Watched</option></select>
+</div>
+<div class="section-head"><h2>Feature film branches</h2><span class="muted" id="count"></span></div><div class="cards" id="cards"></div>
+<div class="section-head"><div><div class="kicker">Beyond the films</div><h2>TV branches & special files</h2></div></div>
+<div class="panel"><p>These series deepen character arcs and multiverse threads. For the cleanest first watch, follow the release sequence shown here; season/episode placement can overlap with films.</p><div class="timeline" id="shows"></div></div>
+<div class="section-head"><div><div class="kicker">How this archive works</div><h2>Research notes & source files</h2></div></div>
+<div class="panel"><p><b>Scope:</b> MCU theatrical films and major MCU-connected Sony Spider-Man entries through <i>Spider-Man: Brand New Day</i> (2026). Upcoming films are marked separately and are not counted as released entries. This is not a catalogue of every Marvel adaptation (Fox X-Men, older Fantastic Four, animated universes, and standalone Sony spin-offs are separate branches).</p><p style="margin-top:10px">Movie poster thumbnails are retrieved dynamically from Wikipedia page images when available; if an image is unavailable, the designed title card remains. IMDb and Rotten Tomatoes links open current external title pages. Descriptions are short spoiler-light summaries, not copied reviews or ratings.</p><p style="margin-top:10px">Reference: <a href="https://www.disneyplus.com/explore/articles/marvel-movies-in-order" target="_blank" rel="noopener">Disney+ official MCU release-order guide</a> · <a href="https://editorial.rottentomatoes.com/guide/marvel-movies-in-order/" target="_blank" rel="noopener">Rotten Tomatoes MCU chronological guide</a>.</p></div>
+</main><footer>NOT AN OFFICIAL MARVEL PRODUCT · A FAN-MADE WATCH COMPANION · Progress is stored locally in your browser.</footer>
+<script>
+const films=[
+["iron-man","Iron Man",2008,"Phase One","Tony Stark builds an armored suit and becomes the hero who launches the modern MCU.","Iron Man"],
+["hulk","The Incredible Hulk",2008,"Phase One","Bruce Banner searches for a cure while evading the military and a dangerous experiment.","The Incredible Hulk"],
+["iron-man-2","Iron Man 2",2010,"Phase One","Tony faces new enemies, public pressure, and the expanding world of S.H.I.E.L.D.","Iron Man 2"],
+["thor","Thor",2011,"Phase One","A banished Asgardian prince learns humility on Earth as a threat rises in his realm.","Thor"],
+["first-avenger","Captain America: The First Avenger",2011,"Phase One","Steve Rogers becomes a super-soldier and fights HYDRA during World War II.","Captain America: The First Avenger"],
+["avengers","The Avengers",2012,"Phase One","Earth's mightiest heroes unite when Loki brings an extraterrestrial invasion to New York.","The Avengers"],
+["iron-man-3","Iron Man 3",2013,"Phase Two","Tony confronts the cost of heroism after a devastating attack.","Iron Man 3"],
+["dark-world","Thor: The Dark World",2013,"Phase Two","Thor teams with unlikely allies to stop an ancient force from plunging the universe into darkness.","Thor: The Dark World"],
+["winter-soldier","Captain America: The Winter Soldier",2014,"Phase Two","Steve uncovers a conspiracy inside S.H.I.E.L.D. and faces a ghost from his past.","Captain America: The Winter Soldier"],
+["guardians-1","Guardians of the Galaxy",2014,"Phase Two","A band of cosmic misfits must protect a powerful artefact from a fanatical warlord.","Guardians of the Galaxy"],
+["ultron","Avengers: Age of Ultron",2015,"Phase Two","The Avengers face an artificial intelligence born from an attempt to protect the world.","Avengers: Age of Ultron"],
+["ant-man","Ant-Man",2015,"Phase Two","A thief becomes a microscopic hero under the guidance of scientist Hank Pym.","Ant-Man"],
+["civil-war","Captain America: Civil War",2016,"Phase Three","A political divide fractures the Avengers and draws new heroes into the conflict.","Captain America: Civil War"],
+["doctor-strange","Doctor Strange",2016,"Phase Three","A gifted surgeon discovers mystic arts and realities beyond conventional science.","Doctor Strange"],
+["guardians-2","Guardians of the Galaxy Vol. 2",2017,"Phase Three","The Guardians explore Peter Quill's origins while learning what makes a family.","Guardians of the Galaxy Vol. 2"],
+["homecoming","Spider-Man: Homecoming",2017,"Phase Three","Peter Parker balances high-school life with proving himself as a neighbourhood hero.","Spider-Man: Homecoming"],
+["ragnarok","Thor: Ragnarok",2017,"Phase Three","Thor races to stop Ragnarok while stranded far from Asgard.","Thor: Ragnarok"],
+["black-panther","Black Panther",2018,"Phase Three","T'Challa returns to Wakanda and faces a challenge to the throne and its future.","Black Panther"],
+["infinity-war","Avengers: Infinity War",2018,"Phase Three","The Avengers and their allies confront Thanos as he seeks the Infinity Stones.","Avengers: Infinity War"],
+["ant-wasp","Ant-Man and the Wasp",2018,"Phase Three","Scott Lang joins Hope van Dyne on a mission into the quantum realm.","Ant-Man and the Wasp"],
+["captain-marvel","Captain Marvel",2019,"Phase Three","Carol Danvers uncovers her past amid a galactic conflict in the 1990s.","Captain Marvel"],
+["endgame","Avengers: Endgame",2019,"Phase Three","The surviving heroes attempt an extraordinary mission to undo the Snap.","Avengers: Endgame"],
+["far-from-home","Spider-Man: Far From Home",2019,"Phase Three","Peter's school trip becomes a new test of responsibility after Endgame.","Spider-Man: Far From Home"],
+["black-widow","Black Widow",2021,"Phase Four","Natasha confronts her history and reunites with a makeshift family of spies.","Black Widow"],
+["shang-chi","Shang-Chi and the Legend of the Ten Rings",2021,"Phase Four","Shang-Chi is drawn into the legacy of the Ten Rings and his family.","Shang-Chi and the Legend of the Ten Rings"],
+["eternals","Eternals",2021,"Phase Four","Ancient protectors emerge from the shadows as a world-changing threat approaches.","Eternals"],
+["no-way-home","Spider-Man: No Way Home",2021,"Phase Four","A spell gone wrong opens the door to visitors from other realities.","Spider-Man: No Way Home"],
+["multiverse-madness","Doctor Strange in the Multiverse of Madness",2022,"Phase Four","Doctor Strange travels through dangerous realities with America Chavez.","Doctor Strange in the Multiverse of Madness"],
+["love-thunder","Thor: Love and Thunder",2022,"Phase Four","Thor reunites with Jane Foster as a god-killing threat emerges.","Thor: Love and Thunder"],
+["wakanda-forever","Black Panther: Wakanda Forever",2022,"Phase Four","Wakanda navigates loss and a new geopolitical threat beneath the sea.","Black Panther: Wakanda Forever"],
+["quantumania","Ant-Man and the Wasp: Quantumania",2023,"Phase Five","The Ant-family explores the quantum realm and encounters a formidable conqueror.","Ant-Man and the Wasp: Quantumania"],
+["guardians-3","Guardians of the Galaxy Vol. 3",2023,"Phase Five","The Guardians embark on a mission tied to Rocket's past.","Guardians of the Galaxy Vol. 3"],
+["the-marvels","The Marvels",2023,"Phase Five","Carol Danvers, Monica Rambeau, and Kamala Khan find their powers unexpectedly linked.","The Marvels"],
+["deadpool-wolverine","Deadpool & Wolverine",2024,"Phase Five","A reluctant team-up sends two unlikely heroes into a multiversal adventure.","Deadpool & Wolverine"],
+["brave-new-world","Captain America: Brave New World",2025,"Phase Five","Sam Wilson faces an international crisis after taking up the Captain America mantle.","Captain America: Brave New World"],
+["thunderbolts","Thunderbolts*",2025,"Phase Five","A group of antiheroes is pulled into a dangerous mission with consequences for the team.","Thunderbolts*"],
+["fantastic-four","The Fantastic Four: First Steps",2025,"Phase Six","Marvel's first family faces a cosmic threat in a retro-futuristic alternate universe.","The Fantastic Four: First Steps"],
+["brand-new-day","Spider-Man: Brand New Day",2026,"Phase Six","Peter Parker returns for a new chapter following the multiversal upheaval.","Spider-Man: Brand New Day"]
+];
+// In-universe story sequence; placement of overlapping stories is approximate.
+const chrono=["first-avenger","captain-marvel","iron-man","iron-man-2","hulk","thor","avengers","dark-world","iron-man-3","winter-soldier","guardians-1","guardians-2","ultron","ant-man","civil-war","black-widow","black-panther","homecoming","doctor-strange","ragnarok","ant-wasp","infinity-war","endgame","shang-chi","far-from-home","eternals","no-way-home","multiverse-madness","love-thunder","wakanda-forever","quantumania","guardians-3","the-marvels","deadpool-wolverine","brave-new-world","thunderbolts","fantastic-four","brand-new-day"];
+const shows=["WandaVision","The Falcon and the Winter Soldier","Loki — Season 1","Loki — Season 2","What If…?","Hawkeye","Moon Knight","Ms. Marvel","She-Hulk: Attorney at Law","Werewolf by Night","The Guardians of the Galaxy Holiday Special","Secret Invasion","Echo","Agatha All Along","Daredevil: Born Again","Ironheart","Eyes of Wakanda","Wonder Man","VisionQuest"];
+let mode="release";const watched=JSON.parse(localStorage.getItem("mcuWatched")||"{}");
+const $=s=>document.querySelector(s);
+function draw(){let q=$("#search").value.toLowerCase(),ph=$("#phase").value,st=$("#status").value;let ids=mode==="release"?films.map(x=>x[0]):chrono;let arr=ids.map(id=>films.find(x=>x[0]===id)).filter(x=>(!q||(x[1]+" "+x[2]+" "+x[4]).toLowerCase().includes(q))&&(!ph||x[3]===ph)&&(!st||(st==="done"?watched[x[0]]:!watched[x[0]])));
+$("#cards").innerHTML=arr.map((m)=>{let id=m[0],done=!!watched[id],wiki=encodeURIComponent(m[5]);return `<article class="movie ${done?'watched':''}"><div class="poster"><span class="phase">${m[3]}</span><img loading="lazy" alt="${m[1]} poster or artwork" data-wiki="${wiki}" onerror="this.style.display='none'"><b>${m[1]}</b></div><div class="body"><div class="titleline"><h3>${m[1]}</h3><span class="year">${m[2]}</span></div><p class="desc">${m[4]}</p><div class="links"><a target="_blank" rel="noopener" href="https://www.imdb.com/find/?q=${encodeURIComponent(m[1])}">IMDb ↗</a><a target="_blank" rel="noopener" href="https://www.rottentomatoes.com/search?search=${encodeURIComponent(m[1])}">Reviews ↗</a><a target="_blank" rel="noopener" href="https://www.google.com/search?q=${encodeURIComponent(m[1]+' official synopsis')}">Details ↗</a></div><label class="check"><input type="checkbox" ${done?'checked':''} onchange="toggle('${id}',this.checked)"> Mark as watched</label></div></article>`}).join("");
+$("#count").textContent=`Showing ${arr.length} of ${films.length} films`;document.querySelectorAll(".poster img[data-wiki]").forEach(async img=>{try{const u="https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=500&titles="+img.dataset.wiki;const r=await fetch(u);const j=await r.json();const page=Object.values(j.query.pages)[0];if(page?.thumbnail?.source)img.src=page.thumbnail.source;else img.remove()}catch(e){img.remove()}});let n=Object.values(watched).filter(Boolean).length;$("#bar").style.width=(n/films.length*100)+"%";$("#progressText").textContent=`${n} / ${films.length} films completed`;
+}
+function toggle(id,v){watched[id]=v;localStorage.setItem("mcuWatched",JSON.stringify(watched));draw()}
+$("#releaseBtn").onclick=()=>{mode="release";$("#releaseBtn").classList.add("active");$("#chronoBtn").classList.remove("active");$("#listTitle").textContent="Theatrical Release Order";$("#listSub").textContent="The recommended path for a first-time journey.";draw()};
+$("#chronoBtn").onclick=()=>{mode="chrono";$("#chronoBtn").classList.add("active");$("#releaseBtn").classList.remove("active");$("#listTitle").textContent="In-Universe Timeline Order";$("#listSub").textContent="A continuity-focused path; some placements are approximate.";draw()};
+["search","phase","status"].forEach(id=>$("#"+id).addEventListener("input",draw));$("#shows").innerHTML=shows.map((s,i)=>`<span class="node">${String(i+1).padStart(2,"0")} · ${s}</span>`).join("");draw();
+</script></body></html>
